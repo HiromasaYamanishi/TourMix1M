@@ -22,7 +22,7 @@ The main statistics of the dataset are as follows:
 | Images | 476,167 |
 | Tourism Spots | 51,011 |
 
-![Dataset Statistics Graph](images/dataset_statistics.png)
+![Dataset Statistics Graph](readme_images/task_pie.pdf)
 
 ## Model
 
@@ -30,7 +30,7 @@ LLaVA-Review is a large-scale multimodal model fine-tuned on the TourMix1M datas
 
 ### Model Architecture
 
-![LLaVA-Review Model Architecture](images/model_architecture.png)
+![LLaVA-Review Model Architecture](readme_images/llavareview_arch.pdf)
 
 ## Results of General Review Generation
 
@@ -44,7 +44,7 @@ LLaVA-Review is a large-scale multimodal model fine-tuned on the TourMix1M datas
 
 ### Generation Example
 
-![General Review Generation Example](images/general_review_generation_example.png)
+![General Review Generation Example](readme_images/general_rg_example.pdf)
 
 ## Results of Conditional Review Generation
 
@@ -58,14 +58,6 @@ LLaVA-Review is a large-scale multimodal model fine-tuned on the TourMix1M datas
 
 ### Generation Examples
 
-1. Conditioning on User Attributes
 
-![User Attribute Conditioning Example](images/conditional_generation_user_attributes.png)
+![User Attribute Conditioning Example](readme_images/cond_rg_examples.pdf)
 
-2. Conditioning on Review Length
-
-![Review Length Conditioning Example](images/conditional_generation_review_length.png)
-
-3. Conditioning on Key Phrases
-
-![Key Phrase Conditioning Example](images/conditional_generation_key_phrase.png)
