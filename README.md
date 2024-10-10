@@ -22,7 +22,7 @@ The main statistics of the dataset are as follows:
 | Images | 476,167 |
 | Tourism Spots | 51,011 |
 
-![Dataset Statistics Graph](readme_images/task_pie.pdf)
+![Dataset Statistics Graph](readme_images/task_pie.png)
 
 ## Model
 
@@ -30,7 +30,7 @@ LLaVA-Review is a large-scale multimodal model fine-tuned on the TourMix1M datas
 
 ### Model Architecture
 
-![LLaVA-Review Model Architecture](readme_images/llavareview_arch.pdf)
+![LLaVA-Review Model Architecture](readme_images/llavareview_arch.png)
 
 ## Results of General Review Generation
 
@@ -44,17 +44,9 @@ LLaVA-Review is a large-scale multimodal model fine-tuned on the TourMix1M datas
 
 ### Generation Example
 
-![General Review Generation Example](readme_images/general_rg_example.pdf)
+![General Review Generation Example](readme_images/general_rg_example.png)
 
 ## Results of Conditional Review Generation
-
-### Performance Comparison Table
-
-| Model | BLUE | ROUGE-1 | ROUGE-L | CIDEr | DIV | PROPN | TFIDF-F1 | Senti-F1 | length |
-|-------|------|---------|---------|-------|-----|-------|----------|----------|--------|
-| LLaVA-Review | 1.291 | 0.272 | 0.185 | 0.108 | 0.920 | 0.457 | 0.244 | 0.045 | 54.9 |
-| LLaVA-Review + gender | 1.410 | 0.269 | 0.185 | 0.106 | 0.920 | 0.430 | 0.239 | 0.046 | 54.3 |
-| LLaVA-Review + length | 1.952 | 0.308 | 0.198 | 0.184 | 0.923 | 0.510 | 0.244 | 0.048 | 87.3 |
 
 ### Generation Examples
 
