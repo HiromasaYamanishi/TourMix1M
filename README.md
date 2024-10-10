@@ -22,7 +22,7 @@ The main statistics of the dataset are as follows:
 | Images | 476,167 |
 | Tourism Spots | 51,011 |
 
-![Dataset Statistics Graph](readme_images/task_pie.png)
+![Dataset Statistics Graph](readme_images/task_pie_wide.png)
 
 ## Model
 
@@ -51,5 +51,5 @@ LLaVA-Review is a large-scale multimodal model fine-tuned on the TourMix1M datas
 ### Generation Examples
 
 
-![User Attribute Conditioning Example](readme_images/cond_rg_examples.pdf)
+![User Attribute Conditioning Example](readme_images/cond_rg_examples.png)
 
