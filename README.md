@@ -1,14 +1,10 @@
 # TourMix1M
 
+## License
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License](http://creativecommons.org/licenses/by-nc-sa/3.0/).　This dataset is intended for research purposes only and as such cannot be used commercially
+
 ## Dataset
-
 TourMix1M is a large-scale multimodal dataset consisting of one million review instances related to Japanese tourist spots. It includes reviews under various conditions such as images, user attributes, user profiles, review ratings, review lengths, key phrases, and visit seasons.
-
-### Data Example
-
-Here's an example of data included in the dataset:
-
-![Data Example](images/data_example.png)
 
 ### Dataset Statistics
 
