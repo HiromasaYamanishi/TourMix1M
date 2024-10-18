@@ -48,7 +48,7 @@ The main statistics of the dataset are as follows:
 
 ## Model
 
-LLaVA-Review is a large-scale multimodal model fine-tuned on the TourMix1M dataset. It takes images and natural language instructions as input and generates tourism reviews.
+LLaVA-Review is a large-scale multimodal model fine-tuned on the TourMix1M dataset. It takes images and natural language instructions as input and generates tourism reviews. The Code is based on our [LLaVATour](https://github.com/HiromasaYamanishi/LLaVATour) implementation.
 
 ### Model Architecture
 
