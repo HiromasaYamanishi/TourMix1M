@@ -3,6 +3,37 @@
 ## License
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License](http://creativecommons.org/licenses/by-nc-sa/3.0/).　This dataset is intended for research purposes only and as such cannot be used commercially
 
+# TourMix1M
+
+## License
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License](http://creativecommons.org/licenses/by-nc-sa/3.0/). This dataset is intended for research purposes only and cannot be used commercially.
+
+## Data
+
+### image_url.csv
+Contains image information for tourist spots.
+* spot_name: Tourist spot name
+* id: Unique identifier
+* image_url: Image URL
+
+### train.csv
+Training data for the model.
+* id: Unique identifier
+* short_prompt, long_prompt: Review generation prompts
+* short_review, long_review: Generated reviews
+* Various flags: gender, age, tag, month, season, profile, rating, length, feature
+
+### test.csv
+Test data for model evaluation.
+* id: Unique identifier
+* spot: Tourist spot name
+* review: Review text
+* User attributes: gender, age
+* Visit details: tag, month, season
+* User profile: profile_tag, profile_long
+* Review characteristics: rating, length, feature
+  
 ## Dataset
 TourMix1M is a large-scale multimodal dataset consisting of one million review instances related to Japanese tourist spots. It includes reviews under various conditions such as images, user attributes, user profiles, review ratings, review lengths, key phrases, and visit seasons.
 
