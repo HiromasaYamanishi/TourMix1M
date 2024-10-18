@@ -1,11 +1,6 @@
 # TourMix1M
 
 ## License
-This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License](http://creativecommons.org/licenses/by-nc-sa/3.0/).　This dataset is intended for research purposes only and as such cannot be used commercially
-
-# TourMix1M
-
-## License
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License](http://creativecommons.org/licenses/by-nc-sa/3.0/). This dataset is intended for research purposes only and cannot be used commercially.
 
