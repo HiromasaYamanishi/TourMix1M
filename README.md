@@ -1,5 +1,8 @@
 # TourMix1M
 
+## Overview
+code for "A Multimodal Dataset and Benchmark for Tourism Review Generation" in RecTour@RecSys24
+
 ## License
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License](http://creativecommons.org/licenses/by-nc-sa/3.0/). This dataset is intended for research purposes only and cannot be used commercially.
