@@ -1,4 +1,58 @@
 # TourMix1M
+## Usage
+The link to data <a href="https://drive.google.com/drive/folders/1meJHE6Y6UsrYid-N-XZGbC2dtSsiMe5Z?" target="_blank">[data]</a>usp=drive_link
+
+make dataset
+
+```python
+cd preprocess
+python make_dataset.py (please excute with make_trainig_data function and review only mode)
+```
+
+make kg
+```python
+cd preprocess
+python make_kg.py
+python knowledge_graph.py (please also check code)
+```
+
+make summary
+```python
+export VLLM_ATTENTION_BACKEND=FLASHINFER
+python prompt_llm.py --model_type gemma2 --tensor_parallel_size 1  --method summarize_review_diversity_sample --index 0 --partition_num 4 --prompt_type normal (please also check code and execute )
+```
+
+normal traininig 
+
+please change data_path in script to normal.json
+
+```bash
+bash scripts/v1_5/finetune_lora_jalan.sh
+```
+
+KG traininig 
+
+please change data_path in script to normal.json
+```bash
+bash scripts/v1_5/finetune_lora_jalan_retrieve.sh
+```
+
+Summary traininig 
+
+please change data_path in script to summary.json
+```bash
+bash scripts/v1_5/finetune_lora_jalan_retrieve.sh
+```
+
+Inference (normal review generation)
+```python
+python inference.py -f review_generation --model_name llavatour model-path (learned path) model-base lmsys/vicuna-13b-v1.5
+```
+
+Inference (conditional review generation)
+```python
+python inference.py -f inference_review_generation_attribute --attribute age --model_name llavatour model-path (learned path) model-base lmsys/vicuna-13b-v1.5
+```
 
 ## Overview
 code for "A Multimodal Dataset and Benchmark for Tourism Review Generation" in RecTour@RecSys24
