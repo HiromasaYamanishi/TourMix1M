@@ -1,4 +1,48 @@
 # TourMix1M
+
+## Overview
+code for "A Multimodal Dataset and Benchmark for Tourism Review Generation" in RecTour@RecSys24
+
+## License
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License](http://creativecommons.org/licenses/by-nc-sa/3.0/). This dataset is intended for research purposes only and cannot be used commercially.
+
+Please refrain from using it for commercial purposes, such as training LLM or deep learning models for your own services, analyzing data to improve your service’s sales, or any activities that may conflict with the interests of Jalan.net.
+
+## Data
+
+### image_url.csv
+Contains image information for tourist spots.
+* spot_name: Tourist spot name
+* id: Unique identifier
+* image_url: Image URL
+
+### train.csv
+Training data for the model.
+* id: Unique identifier
+* short_prompt, long_prompt: Review generation prompts
+* short_review, long_review: Generated reviews
+* Various flags: gender, age, tag, month, season, profile, rating, length, feature
+
+### test.csv
+Test data for model evaluation.
+* id: Unique identifier
+* spot: Tourist spot name
+* review: Review text
+* User attributes: gender, age
+* Visit details: tag, month, season
+* User profile: profile_tag, profile_long
+* Review characteristics: rating, length, feature
+
+### summary*.pkl
+* summary of tourism spots made by gemma2-2b and gemma2-9b
+
+### normal.json
+* training data used to train LLaVA
+
+### summary.json
+* trainig data with summary
+
 ## Usage
 The link to data <a href="https://drive.google.com/drive/folders/1meJHE6Y6UsrYid-N-XZGbC2dtSsiMe5Z?" target="_blank">[data]</a>usp=drive_link
 
@@ -54,37 +98,7 @@ Inference (conditional review generation)
 python inference.py -f inference_review_generation_attribute --attribute age --model_name llavatour model-path (learned path) model-base lmsys/vicuna-13b-v1.5
 ```
 
-## Overview
-code for "A Multimodal Dataset and Benchmark for Tourism Review Generation" in RecTour@RecSys24
 
-## License
-
-This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License](http://creativecommons.org/licenses/by-nc-sa/3.0/). This dataset is intended for research purposes only and cannot be used commercially.
-
-## Data
-
-### image_url.csv
-Contains image information for tourist spots.
-* spot_name: Tourist spot name
-* id: Unique identifier
-* image_url: Image URL
-
-### train.csv
-Training data for the model.
-* id: Unique identifier
-* short_prompt, long_prompt: Review generation prompts
-* short_review, long_review: Generated reviews
-* Various flags: gender, age, tag, month, season, profile, rating, length, feature
-
-### test.csv
-Test data for model evaluation.
-* id: Unique identifier
-* spot: Tourist spot name
-* review: Review text
-* User attributes: gender, age
-* Visit details: tag, month, season
-* User profile: profile_tag, profile_long
-* Review characteristics: rating, length, feature
   
 ## Dataset
 TourMix1M is a large-scale multimodal dataset consisting of one million review instances related to Japanese tourist spots. It includes reviews under various conditions such as images, user attributes, user profiles, review ratings, review lengths, key phrases, and visit seasons.
