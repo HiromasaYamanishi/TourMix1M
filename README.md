@@ -44,7 +44,7 @@ Test data for model evaluation.
 * trainig data with summary
 
 ## Usage
-The link to data <a href="https://drive.google.com/drive/folders/1meJHE6Y6UsrYid-N-XZGbC2dtSsiMe5Z?" target="_blank">[data]</a>usp=drive_link
+The link to data <a href="https://drive.google.com/drive/folders/1HAd_wA0oCJLcNKxeM1qrr8FLZDprJQr8?usp=drive_link" target="_blank">[data]</a>usp=drive_link
 
 make dataset
 
